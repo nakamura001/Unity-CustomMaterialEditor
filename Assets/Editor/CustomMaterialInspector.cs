@@ -19,6 +19,7 @@ public class CustomMaterialInspector : MaterialEditor
 		string[] keyWords = targetMat.shaderKeywords;
  
 		// see if redify is set, then show a checkbox
+		//   Material の Shader に キーワード (定数)  REDIFY_ON が存在するかを bool で取得
 		bool redify = keyWords.Contains ("REDIFY_ON");
 		EditorGUI.BeginChangeCheck ();
 		//  ここの記述が Inspector に反映される。今回は「Redify material」という名前のトグル(bool)のデータ
